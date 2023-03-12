@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script src="../JAVA SCRIPT/gallery.js" defer></script>
+</head>
+<body onload="colo()">
+    <div id="a">
+        <h1 id="heading">Travelled Image Gallery</h1>
+    </div>
+    <div id="bigscreen" class="fullScreenImg" style="display:none" onclick="imgV()" >
+        <video id="fullImg" src="../ASSERTS/Images/s1.jpg"></video>
+        <h1 id="imgheading">Heading</h1>
+        <p id="imgparagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere unde hic veritatis deleniti numquam officia officiis quidem itaque consequatur consequuntur?</p>
+      </div>
+      <div class="bodyOfGallery">
+        <img src="../ASSERTS/Images/s1.jpg" onclick="imgK(this.src,'Garden by the bay','<a href=https://www.google.com/maps/place/Gardens+by+the+Bay/@1.2815683,103.8614245,17z/data=!3m1!4b1!4m6!3m5!1s0x31da1904937e1633:0x62099677b59fca76!8m2!3d1.2815683!4d103.8636132!16zL20vMGIwaGI1 >Direction</a>')">
+        <img src="../ASSERTS/Images/s2.jpg" onclick="imgK(this.src,'Universal studio','<a href=https://www.google.com/maps/place/Universal+Studios+Singapore/@1.2541673,103.8140752,16z/data=!3m1!4b1!4m6!3m5!1s0x31da1955a615a343:0x3094037d34e6529f!8m2!3d1.2540421!4d103.8238084!16s%2Fm%2F026_mw1>Direction</a>')">
+        <img src="../ASSERTS/Images/s3.jpg" onclick="imgK(this.src,'Singapore flyer','<a href=https://www.google.com/maps/place/Singapore+Flyer/@1.2892988,103.8609481,17z/data=!3m2!4b1!5s0x31da1907c60cda71:0x1c192c5f7f55ee5!4m6!3m5!1s0x31da19a936c551cd:0x7fb4e58ad9cd826e!8m2!3d1.2892988!4d103.8631368!16zL20vMDd3czR3>Direction</a>')">
+        <img src="../ASSERTS/Images/s4.jpg" onclick="imgK(this.src,'Marina bay','<a href=https://www.google.com/maps/place/Marina+Bay/@1.2924791,103.8547508,15z/data=!3m1!4b1!4m6!3m5!1s0x31da19b922a614c5:0xee86c81bf5a0b783!8m2!3d1.2877936!4d103.8665551!16zL20vMDVwcF9s>Direction</a>')">
+        <img src="../ASSERTS/Images/s5.jpg" onclick="imgK(this.src,'S.E.A Aquarium','<a href=https://www.google.com/maps/place/S.E.A.+Aquarium/@1.2583209,103.7504769,13z/data=!3m1!5s0x31da1bfd906227e3:0xe8c76fea534e7530!4m10!1m2!2m1!1sS.E.A+Aquarium!3m6!1s0x31da1bfdabc2ed8f:0xf4b09544068cfd26!8m2!3d1.2583209!4d103.8205147!15sCg5TLkUuQSBBcXVhcml1bVoOIgxzZWEgYXF1YXJpdW2SAQhhcXVhcml1bZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbGRGQlhWbVpuRUFF4AEA!16s%2Fg%2F11hzcpq43b>Direction</a>')">
+        <img src="../ASSERTS/Images/s6.jpg" onclick="imgK(this.src,'Sentosa Merlion Tower','<a href=https://www.google.com/maps/place/Merlion/@1.2583204,103.7504768,13z/data=!4m10!1m2!2m1!1sSentosa+Merlion+Tower!3m6!1s0x31da19085926dadb:0x9f427391c9f64c38!8m2!3d1.2867892!4d103.8545014!15sChVTZW50b3NhIE1lcmxpb24gVG93ZXJaFyIVc2VudG9zYSBtZXJsaW9uIHRvd2VykgEIZm91bnRhaW6aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlpja2x0TFhWM1JSQULgAQA!16s%2Fm%2F06423sw>Direction</a>')">
+        <img src="../ASSERTS/Images/s7.jpg" onclick="imgK(this.src,'Experience Little India','<a href=https://www.google.com/maps/place/Singapore/@1.3139961,103.7041623,11z/data=!3m1!4b1!4m6!3m5!1s0x31da11238a8b9375:0x887869cf52abf5c4!8m2!3d1.352083!4d103.819836!16zL20vMDZ0MnQ>Direction</a>')">
+        <img src="../ASSERTS/Images/s8.jpg" onclick="imgK(this.src,'Trick Eye Musem','<a href=https://www.google.com/maps/place/Trickeye+@+Southside/@1.2570342,103.8205106,17z/data=!3m1!4b1!4m6!3m5!1s0x31da1bfdc7bc1695:0x9fd51335af8b41f!8m2!3d1.258124!4d103.811537!16s%2Fg%2F1q69y5jh9'>Direction</a>')">
+      </div>
+      <script>
+        function colo()
+{
+    var col=["s1.jpg","s2.jpg","s3.jpg","s4.jpg","s5.jpg","s6.jpg","s7.jpg","s8.jpg"]
+    var len=col.length;
+    var ran=Math.random()*len;
+    var rannum=Math.round(ran)
+    document.getElementById("a").style.backgroundImage="URL(../ASSERTS/images/"+col[rannum]+")"
+    var updatethetime=setTimeout(function(){colo()},5000)
+}
+      </script>
+    
+</body>
+</html>

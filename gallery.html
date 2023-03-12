@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script  src="../JAVA SCRIPT/gallery.js" defer></script>
+</head>
+<body onload="colo()">
+    <div id="a">
+      <h1 id="heading">Travelled Image Gallery</h1>
+    </div>
+    <div id="bigscreen" class="fullScreenImg" style="display:none" onclick="imgV()" >
+      <img id="fullImg" src="../ASSERTS/Images/a1.jpg">
+      <h1 id="imgheading">Heading</h1>
+      <p id="imgparagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere unde hic veritatis deleniti numquam officia officiis quidem itaque consequatur consequuntur?</p>
+
+    </div>
+    <!--from here body of gallery starts-->
+    <div class="bodyOfGallery">
+      <img src="../ASSERTS/Images/a1.jpg"  onclick="imgK(this.src, 'Charminar','<a href=https://www.google.com/maps/place/Charminar/@17.3615636,78.4724758,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb978a6e1a939b:0xcb5a69e4aaf113fb!8m2!3d17.3615636!4d78.4746645!16zL20vMDNuZmxw>Direction</a>')">
+      <img src="../ASSERTS/Images/a2.png"  onclick="imgK(this.src,'Redfort','<a href=https://www.google.com/maps/place/Red+Fort/@28.6561592,77.2388316,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfce26ec085ef:0x441e32f4fa5002fb!8m2!3d28.6561592!4d77.2410203!16zL20vMDVteXN2 >Direction</a>')">
+      <img src="../ASSERTS/Images/a3.jpg"  onclick="imgK(this.src,'Golden Temple','<a href=https://www.google.com/maps/place/Golden+Temple/@12.8699696,79.0831399,17z/data=!3m1!4b1!4m6!3m5!1s0x3bad3ebdfda8bf47:0x1b47e6d94faeb47e!8m2!3d12.8699696!4d79.0876246!16s%2Fg%2F11ggbcbw41>Diection<a/>')">
+      <img src="../ASSERTS/Images/a4.jpg"  onclick="imgK(this.src,'Gao','<a href=https://www.google.com/maps/place/Goa/@15.3490286,73.4462009,9z/data=!3m1!4b1!4m6!3m5!1s0x3bbfba106336b741:0xeaf887ff62f34092!8m2!3d15.2993265!4d74.123996!16zL20vMDFjMW5t>Direction<a/>')">
+      <img src="../ASSERTS/Images/a5.jpg"  onclick="imgK(this.src,'Murudeshwar','<a href=https://www.google.com/maps/place/Murdeshwar,+Karnataka/@14.0920306,74.4751809,14z/data=!3m1!4b1!4m6!3m5!1s0x3bbc46d192e0edad:0x87c516bd6653efe1!8m2!3d14.093993!4d74.4898633!16s%2Fm%2F02q6116>Direction<a/>')">
+      <img src="../ASSERTS/Images/a6.jpeg" onclick="imgK(this.src,'Tajmahal','<a href=https://www.google.com/maps/place/Murdeshwar,+Karnataka/@14.0920306,74.4751809,14z/data=!3m1!4b1!4m6!3m5!1s0x3bbc46d192e0edad:0x87c516bd6653efe1!8m2!3d14.093993!4d74.4898633!16s%2Fm%2F02q6116>Direction<a/>')">
+      <img src="../ASSERTS/Images/a7.jpg"  onclick="imgK(this.src,'varasani','<a href=https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh/@25.3207461,82.9210684,12z/data=!3m1!4b1!4m6!3m5!1s0x398e2db76febcf4d:0x68131710853ff0b5!8m2!3d25.3176452!4d82.9739144!16zL20vMDFqOTIy>Direction<a/>')">
+      <img src="../ASSERTS/Images/a8.jpg"  onclick="imgK(this.src,'Indian Gate','<a href=https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh/@25.3207461,82.9210684,12z/data=!3m1!4b1!4m6!3m5!1s0x398e2db76febcf4d:0x68131710853ff0b5!8m2!3d25.3176452!4d82.9739144!16zL20vMDFqOTIy>Direction<a/>')">
+    </div>
+    <script>
+      function colo()
+{
+    var col=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","a6.jpg","a7.jpg","a8.jpg"]
+    var len=col.length;
+    var ran=Math.random()*len;
+    var rannum=Math.round(ran)
+    document.getElementById("a").style.backgroundImage="URL(../ASSERTS/images/"+col[rannum]+")"
+    var updatethetime=setTimeout(function(){colo()},5000)
+}
+    </script>
+</body>
+</html>

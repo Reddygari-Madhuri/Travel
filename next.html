@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+}
+#header
+{
+    letter-spacing: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    font-size: 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../ASSERTS/Images/Left.png"),url("../ASSERTS/Images/Right.png"),url("../ASSERTS/Images/tim-bogdanov-4uojMEdcwI8-unsplash.jpg");
+    background-size: 80% 400px,80% 400px,100% 600px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 0px 40px,right bottom,0px -180px;
+    box-shadow: 0px 10px 5px gray;
+    transition: background-position 1s, color 3s, text-shadow 3s, font-size 2s;
+}
+#header:hover{
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 5px skyblue,-2px -2px 5px purple,0px 0px 10px black;
+    background-position: -230px 20px, 630px 20px,0px -180px;
+}
+#videolayoutleft{
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: purple;
+    position: relative;
+}
+#leftvideo{
+    float: left;
+    width: 380px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    box-shadow: 2px 2px 5px black;
+    top:25%;
+}
+#rightheading{
+    position: absolute;
+    right: 25%;
+    color: pink;
+}
+#rightparagraph
+{
+    color: white;
+    text-align: justify;
+    text-indent: 20px;
+    width: 50%;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-size: 24px;
+}
+body{
+    background-image: linear-gradient(purple,darkblue);
+    background-repeat: no-repeat;
+    background-size: 100% 490px;    
+}
+#navbar
+{
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(161, 66, 161, 0.736);
+    box-shadow: 0px 5px 10px purple;
+}
+#mainlist
+{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.li
+{
+    background-color: purple;
+    padding: 20px;
+    border: 2px solid white;
+    height: 16px;
+}
+.li:hover{
+    background-color: darkcyan;
+}
+.li:hover a{
+    color: black;
+}
+#sublist
+{
+    list-style: none;
+    display: none;
+}
+#sublistplace
+{
+    width: 60px;
+    color: azure;
+    text-align: center;
+}
+#sublistplace:hover
+{
+    color: black;
+}
+.sli
+{
+    color: white;
+    position: relative;
+    top: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    right: 20px;
+    background-color: purple;
+    box-shadow: 0px 0px 10px black;
+}
+.sli:hover{
+    background-color: purple;
+    color: black;
+}
+#sublistplace:hover #sublist
+{
+    display:block;
+}
+img{
+    width: 50%;
+    height: 450px;
+    position: relative;
+    top: 140px;
+}
+#img2{
+    float: right;
+}
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Lets Travel...</h1>
+    </div>
+    <div id="navbar"><ul id="mainlist">
+        <li class="li"><a href="#">HOME</a></li>
+        <li class="li" id="sublistplace">PLACE
+            <ul id="sublist">
+                <li class="sli"><a href="gallery.html">India</a></li>
+                <li class="sli"><a href="singpore.html">Singapore</a></li>
+                <li class="sli"><a href="dubai.html">Dubai</a></li>
+                <li class="sli"><a href="thailand.html">Thailand</li>
+            </ul>`
+        </li>
+        <li class="li"><a href="#">INFO</a></li>
+        <li class="li"><a href="#">LOGOUT</a></li>
+    </ul>    
+    </div>
+    <div id="videolayoutleft">
+        <video id="leftvideo" src="../ASSERTS/Videos/v2.mp4" controls autoplay muted loop></video>
+<h1 id="rightheading">Hyderabad</h1>
+<p id="rightparagraph">Hyderabad Tourist Places:
+
+    Popularly known as the city of pearls; Hyderabad is a place with the right mix of the old and the new. With shahi food, affectionate people, rich landmarks this sure will give your trip that royal tinge one yearns to experience at least once in a lifetime. Now let us see some of the best places to visit in Hyderabad and check off your list once you step in the city. 
+    </p>
+    </div>
+    <div id="videolayoutleft">
+        <video id="leftvideo" src="../ASSERTS/Videos/v1.mp4"controls autoplay muted loop></video>
+<h1 id="rightheading">Gokarna</h1>
+<p id="rightparagraph">
+    Gokarna is a beautiful blend of beaches and hills. It is well known for its clean beaches of Arabian sea and series of western ghats hills surrounding them. In short – Gokarna beach trek is all about hiking from one beach to another to find new horizons through the rocky and rustic trails of forests. 
+    </p>
+    </div>
+    <div id="videolayoutleft">
+        <video id="leftvideo" src="../ASSERTS/Videos/LADAKH - An Inspirational Film.mp4" controls autoplay muted loop></video>
+<h1 id="rightheading">Ladkh</h1>
+<p id="rightparagraph">
+    Ladakh was established as a union territory of India on 31 October, 2019, following the passage of the Jammu and Kashmir Reorganisation Act. Prior to that, it was part of the Jammu and Kashmir state. Ladakh is both the largest and the second least populous union territory of India.
+    </p>
+    </div>
+    <div id="videolayoutleft">
+        <video id="leftvideo" src="../ASSERTS/Videos/v3.mp4" controls autoplay muted loop></video>
+<h1 id="rightheading">Manali</h1>
+<p id="rightparagraph">
+    It is a rustic enclave known for its cool climate and snow-capped mountains, offering respite to tourists escaping scorching heat of the plains. The tourism industry in Manali started booming only in the early 20th century, mainly because of its natural bounties and salubrious climate.
+    </p>
+    </div>   
+</body>
+</html>

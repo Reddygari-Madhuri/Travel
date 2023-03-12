@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script src="../JAVA SCRIPT/gallery.js" defer></script>
+</head>
+<body onload="colo()">
+    <div id="a">
+        <h1 id="heading">Travelled Image Gallery</h1>
+    </div>
+    <div id="bigscreen" class="fullScreenImg" style="display:none" onclick="imgV()" >
+        <img id="fullImg" src="../ASSERTS/Images/b1.jpg">
+        <h1 id="imgheading">Heading</h1>
+        <p id="imgparagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere unde hic veritatis deleniti numquam officia officiis quidem itaque consequatur consequuntur?</p>
+      </div>
+      <div class="bodyOfGallery">
+        <img src="../ASSERTS/Images/b1.jpg" onclick="imgK(this.src,'Bangkok','<a href=https://www.google.com/maps/place/Bangkok,+Thailand/@13.7244416,100.3529122,10z/data=!3m1!4b1!4m6!3m5!1s0x311d6032280d61f3:0x10100b25de24820!8m2!3d13.7563309!4d100.5017651!16zL20vMGZuMmc>Direction</>')">
+        <img src="../ASSERTS/Images/b2.jpg" onclick="imgK(this.src,'Phuket','<a href=https://www.google.com/maps/place/Phuket,+Mueang+Phuket+District,+Phuket+83000,+Thailand/@7.883306,98.3744589,14z/data=!3m1!4b1!4m6!3m5!1s0x305031fd2d6380a3:0x8df88000bd82f66b!8m2!3d7.8804479!4d98.3922504!16zL20vMGZfcjFf>Direction</>')">
+        <img src="../ASSERTS/Images/b3.jpg" onclick="imgK(this.src,'Pattaya','<a href=https://www.google.com/maps/place/Pattaya+City,+Bang+Lamung+District,+Chon+Buri+20150,+Thailand/@12.8866581,100.7826723,11z/data=!3m1!4b1!4m6!3m5!1s0x310295924d31d7e3:0xa97ff301a9bd10ff!8m2!3d12.9235557!4d100.8824551!16zL20vMDM0X3Ft>Direction</>')">
+        <img src="../ASSERTS/Images/b4.jpg" onclick="imgK(this.src,'Chaing mai','<a href=https://www.google.com/maps/place/Chiang+Mai,+Mueang+Chiang+Mai+District,+Chiang+Mai,+Thailand/@18.7942328,98.8864366,12z/data=!3m1!4b1!4m6!3m5!1s0x30da3a7e90bb6f5d:0x98d46270a59b4367!8m2!3d18.7883439!4d98.9853008!16zL20vMDFocjU4>Direction</>')">
+        <img src="../ASSERTS/Images/b5.jpg" onclick="imgK(this.src,'Koh lipe','<a href=https://www.google.com/maps/place/Ko+Lipe/@6.4877047,99.2886962,15z/data=!3m1!4b1!4m6!3m5!1s0x304c04b682540c8f:0xef2301cf0a9d3394!8m2!3d6.4885717!4d99.3048959!16s%2Fm%2F04jn2hz>Direction</>')">
+        <img src="../ASSERTS/Images/b6.jpg" onclick="imgK(this.src,'Sukhothai','<a href=https://www.google.com/maps/place/Sukhothai+Historical+Park/@9.0412583,92.0430711,5z/data=!4m10!1m2!2m1!1sSukhothai!3m6!1s0x30de5836f40b1401:0x78f6f57e5fd9c7e6!8m2!3d17.0187799!4d99.7064501!15sCglTdWtob3RoYWkiA4gBAVoLIglzdWtob3RoYWmSARVoZXJpdGFnZV9wcmVzZXJ2YXRpb27gAQA!16zL20vMDFmbDJ4>Direction</>')">
+        <img src="../ASSERTS/Images/b7.jpg" onclick="imgK(this.src,'Nong Khai','<a href=https://www.google.com/maps/place/Nong+Khai,+Thailand/@17.9492811,102.4538075,10z/data=!3m1!4b1!4m6!3m5!1s0x3124eb01d19a39b9:0x102b54113604a30!8m2!3d17.949482!4d102.734005!16zL20vMDFqOXhn>Direction</>')">
+        <img src="../ASSERTS/Images/b8.jpg" onclick="imgK(this.src,'Koh Samui','<a href=https://www.google.com/maps/place/Ko+Samui/@9.5120168,100.0135929,3a,75y,90t/data=!3m8!1e2!3m6!1shttp:%2F%2Ft1.gstatic.com%2Fimages%3Fq%3Dtbn:ANd9GcQTCuUUD-1OQeaRt2gCX5FmxFU2A7-JvXAxWkUfTamzevTaPnWr!2e7!3e27!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-proxy%2FALm4wwmF_myfodTxjMKBmP9nJYRYUCkoGl--eKr6afZV8-Jp5a8wNemniSURWeWw-aBqTuEOnxe37bNrZiYCctvyA8x5PPXLJqzBTFwHp0PFYL7Pym8Vrkm6U-aFv0Lxv3YKPbfFvUTMEfhhjl39QJfo4bP9-o4Dp9J7Wm82PH8BgoHT9OB7OT7HhA%3Dw203-h135-k-no!7i1080!8i720!4m6!3m5!1s0x3054f1501c66266f:0xedd55abd3d7d8330!8m2!3d9.5120168!4d100.0135929!16zL20vMDMzY3N2>Direction</>')">
+      </div>
+      <script>
+        function colo()
+{
+    var col=["d1.jpg","d2.jpg","d3.jpg","d4.jpg","d5.jpg","d6.jpg","d7.jpg","d8.jpg"]
+    var len=col.length;
+    var ran=Math.random()*len;
+    var rannum=Math.round(ran)
+    document.getElementById("a").style.backgroundImage="URL(../ASSERTS/images/"+col[rannum]+")"
+    var updatethetime=setTimeout(function(){colo()},5000)
+}
+      </script>
+    
+</body>
+</html>

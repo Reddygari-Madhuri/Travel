@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script src="../JAVA SCRIPT/gallery.js" defer></script>
+</head>
+<body onload="colo()">
+<div id="a">
+    <h1 id="heading">Travelled Image Gallery</h1>
+</div>
+<div id="bigscreen" class="fullScreenImg" style="display:none" onclick="imgV()" >
+    <img id="fullImg" src="../ASSERTS/Images/d1.jpg">
+    <h1 id="imgheading">Heading</h1>
+    <p id="imgparagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere unde hic veritatis deleniti numquam officia officiis quidem itaque consequatur consequuntur?</p>
+  </div>
+  <div class="bodyOfGallery">
+    <img src="../ASSERTS/Images/d1.jpg" onclick="imgK(this.src,'Burj Khalifa','<a href=https://www.google.com/maps/place/Burj+Khalifa/@25.197197,55.2721877,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f43348a67e24b:0xff45e502e1ceb7e2!8m2!3d25.197197!4d55.2743764!16zL20vMDNjbjB2>Direction</a>')">
+    <img src="../ASSERTS/Images/d2.jpg" onclick="imgK(this.src,'Palm jumeirah','<a href=https://www.google.com/maps/place/Palm+Jumeirah/@25.1193261,55.1142305,14z/data=!3m1!4b1!4m6!3m5!1s0x3e5f1529c2653b15:0x3dcabcae764a3e16!8m2!3d25.1124317!4d55.138978!16s%2Fm%2F025smcz>Direction</a>')">
+    <img src="../ASSERTS/Images/d3.jpg" onclick="imgK(this.src,'Museum of the Future','<a href=https://www.google.com/maps/place/Museum+of+The+Future/@25.2192034,55.2797441,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f434ba1c34fa9:0x2bfd06ff9c202fc4!8m2!3d25.2192034!4d55.2819328!16s%2Fg%2F11nynbjfm1>Direction</a>')">
+    <img src="../ASSERTS/Images/d4.jpg" onclick="imgK(this.src,'Dubai Miracle Garden','<a href=https://www.google.com/maps/place/Dubai+Miracle+Garden/@25.0600069,55.242276,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6c349030525f:0x6d282a232a35009b!8m2!3d25.0600069!4d55.2444647!16s%2Fg%2F11b86dd06f>Direction</a>')">
+    <img src="../ASSERTS/Images/d5.jpg" onclick="imgK(this.src,'Dubai Fountain','<a href=https://www.google.com/maps/place/The+Dubai+Fountain/@25.1953438,55.2712881,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6829bbccf13f:0x3e7d654868612ec8!8m2!3d25.1951554!4d55.2751579!16s%2Fm%2F06zn69y>Direction</a>')">
+    <img src="../ASSERTS/Images/d6.jpg" onclick="imgK(this.src,'Burj Al Arab','<a href=https://www.google.com/maps/place/Burj+Al+Arab/@25.1411914,55.0451711,12z/data=!4m13!1m2!2m1!1sBurj+Al+Arab!3m9!1s0x3e5f6a576414cf2d:0xb3da71b879f0e038!5m2!4m1!1i2!8m2!3d25.1411914!4d55.1852468!15sCgxCdXJqIEFsIEFyYWJaDiIMYnVyaiBhbCBhcmFikgEFaG90ZWyaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnRYMHMzV2xSbkVBReABAA!16zL20vMDJtem05>Direction</a>')">
+    <img src="../ASSERTS/Images/d7.jpg" onclick="imgK(this.src,'Dubai Marina','<a href=https://www.google.com/maps/place/Dubai+Marina+-+Dubai+-+United+Arab+Emirates/@25.0832675,55.1220605,14z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6b5402c126e3:0xb9511e6655c46d7c!8m2!3d25.0805422!4d55.1403426!16zL20vMDdkMHRo>Direction</a>')">
+    <img src="../ASSERTS/Images/d8.jpg" onclick="imgK(this.src,'Desert Sahara','<a href=https://www.google.com/maps/place/Sahara+Desert/@21.9751844,13.0833388,5z/data=!3m1!4b1!4m6!3m5!1s0x13883b64fb267151:0xd6406bdc582d7390!8m2!3d23.4162027!4d25.66283!16zL20vMDF3MXZ0>Direction</a>')">
+  </div>
+  <script>
+    function colo()
+{
+    var col=["d1.jpg","d2.jpg","d3.jpg","d4.jpg","d5.jpg","d6.jpg","d7.jpg","d8.jpg"]
+    var len=col.length;
+    var ran=Math.random()*len;
+    var rannum=Math.round(ran)
+    document.getElementById("a").style.backgroundImage="URL(../ASSERTS/images/"+col[rannum]+")"
+    var updatethetime=setTimeout(function(){colo()},5000)
+}
+  </script>
+</body>
+</html>
